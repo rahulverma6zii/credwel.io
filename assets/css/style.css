@@ -28,7 +28,7 @@ body {
 hr.section-divider{
   color: white;
   background-color: white;
-  margin: 100px 0px;
+  margin: 50px 0px;
 }
 
 /* progressbar */
@@ -104,8 +104,7 @@ div{
 
 section
  {
-  padding-bottom: 50px;
-  margin: 100px 0px;
+
 }
 .hero-section{
     padding-bottom: 10px;
@@ -120,10 +119,14 @@ background-color: white;
 border: green 1px solid;
 color: green;
 }
+#joinus .row:nth-child(2) .hover-class{
+  height: 300px;
+}
 .hover-class,.card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
 .hover-class:hover,.card:hover {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
