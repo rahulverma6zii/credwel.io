@@ -23,6 +23,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="prenav d-none d-lg-block d-md-none">
             <div class="container-fluid">
@@ -64,8 +65,10 @@
                 </div>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-sm  navbar-light position-sticky">
-            <div class="container-fluid bg-light p-2   rounded-2  shadow-lg">
+        <nav class="navbar navbar-expand-sm  navbar-light ">
+
+            <div class="container-fluid bg-light p-2   rounded-2  shadow-lg position-relative">
+                <div class="progress"></div>
                 <a class="navbar-brand" href="#">LOGO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -137,9 +140,9 @@
                 </div>
             </div>
         </section>
-
+        <hr class="section-divider">
         <!-- headlines -->
-        <section id="headlines">
+        <section id="headlines" class="mt-5">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row flex-md-row">
                     <div class="">
@@ -153,7 +156,7 @@
                     <div class="col-12 col-lg-8 col-md-6 ">
 
                         <div class="card firstcard ">
-                            <img class="card-img-top img-fluid h-100 w-50"
+                            <img class="card-img-top img-fluid h-100 w-50 mx-auto mx-lg-0"
                                 src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                                 alt="">
                             <div class="card-body p-5 justify-content-center flex-column">
@@ -164,7 +167,8 @@
 
                                 </h6>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus totam dolores laborum alias dolore ipsa similique, ipsam nostrum assumenda et?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus totam dolores
+                                    laborum alias dolore ipsa similique, ipsam nostrum assumenda et?
                                 </p>
 
                             </div>
@@ -250,25 +254,203 @@
         <!-- insightsection -->
         <section>
             <div class="container">
-                <h4 class="display-4 fw-bolder">Headlines</h4>
-                <div class="row">
-                    <div class="col-3 hover-outline" onclick="updateCarousel();">
-                       <button class="btn"> See All</button>
+                <!-- <h4 class="display-4 fw-bolder">Headlines</h4>
+                <div class="row text-center">
+                    <div class="col-3 hover-outline">
+                       <button class=" w-100 insight-buttons">See All</button>
                     </div>
-                    <div class="col-3 hover-outline"><button class="btn">Innovation</button></div>
-                    <div class="col-3 hover-outline"><button class="btn">Transition</button></div>
-                    <div class="col-3 hover-outline"><button class="btn">Inclusion</button></div>
+                    <div class="col-3 hover-outline "><button class="insight-buttons w-100 ">Innovation</button></div>
+                    <div class="col-3 hover-outline "><button class="insight-buttons w-100 ">Transition</button></div>
+                    <div class="col-3 hover-outline ""><button class="insight-buttons w-100 ">Inclusion</button></div>
 
                 </div>
                 <div class="owl-carousel insights mt-5">
                   
+                </div> -->
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 col-md-6 order-1 order-lg-0">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Accordion Item #1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <div class="row">
+                                        <div class="col-6">
+                                           <div class="row ">
+                                            <div class="col-6">
+                                                <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                            </div>
+                                            <div class="col-6">
+                                                <span class="placeholder placeholder-lg">lorem 12</span>
+                                            </div>
+                                           </div>
+                                             
+                                        </div>
+                                        <div class="col-6">
+                                             <div class="row ">
+                                            <div class="col-6">
+                                                <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                            </div>
+                                            <div class="col-6">
+                                                <span class="placeholder placeholder-lg">lorem 12</span>
+                                            </div>
+                                           </div>
+                                        </div>
+                                        <div class="col-6">
+                                             <div class="row ">
+                                            <div class="col-6">
+                                                <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                            </div>
+                                            <div class="col-6">
+                                                <span class="placeholder placeholder-lg">lorem 12</span>
+                                            </div>
+                                           </div>
+                                        </div>
+                                        <div class="col-6">
+                                             <div class="row ">
+                                            <div class="col-6">
+                                                <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                            </div>
+                                            <div class="col-6">
+                                                <span class="placeholder placeholder-lg">lorem 12</span>
+                                            </div>
+                                           </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                               <div class="row ">
+                                                <div class="col-6">
+                                                    <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="placeholder placeholder-lg">lorem 12</span>
+                                                </div>
+                                               </div>
+                                                 
+                                            </div>
+                                            <div class="col-6">
+                                                 <div class="row ">
+                                                <div class="col-6">
+                                                    <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="placeholder placeholder-lg">lorem 12</span>
+                                                </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-6">
+                                                 <div class="row ">
+                                                <div class="col-6">
+                                                    <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="placeholder placeholder-lg">lorem 12</span>
+                                                </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-6">
+                                                 <div class="row ">
+                                                <div class="col-6">
+                                                    <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="placeholder placeholder-lg">lorem 12</span>
+                                                </div>
+                                               </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Accordion Item #3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                               <div class="row ">
+                                                <div class="col-6">
+                                                    <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="placeholder placeholder-lg">lorem 12</span>
+                                                </div>
+                                               </div>
+                                                 
+                                            </div>
+                                            <div class="col-6">
+                                                 <div class="row ">
+                                                <div class="col-6">
+                                                    <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="placeholder placeholder-lg">lorem 12</span>
+                                                </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-6">
+                                                 <div class="row ">
+                                                <div class="col-6">
+                                                    <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="placeholder placeholder-lg">lorem 12</span>
+                                                </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-6">
+                                                 <div class="row ">
+                                                <div class="col-6">
+                                                    <img class="img-fluid" src="https://picsum.photos/id/684/600/400" alt="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="placeholder placeholder-lg">lorem 12</span>
+                                                </div>
+                                               </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 order">
+                        <img class="img-fluid" src="https://picsum.photos/id/564/600/400" alt="">
+                    </div>
                 </div>
             </div>
         </section>
 
 
-       
-        
+<!-- joinus -->
+
         <section id="joinus">
             <div class="container">
                 <h4 class="display-4 fw-bolder section-heading">Join us</h4>
@@ -276,10 +458,10 @@
             <div class="container">
 
                 <div class="row  hover-class align-items-center ">
-                    <div class="col-6 p-3">
+                    <div class="col-lg-6 col-12 col-md-6 p-3">
                         <img class="img-fluid" src="https://picsum.photos/id/182/600/400" alt="">
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-12 col-md-6">
                         <h6 class="display-6">Why Hire Rahul?</h6>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sed labore ab? Impedit,
                             incidunt omnis?</p>
@@ -289,8 +471,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex mt-5 job-offer-cards justify-content-between text-center">
-                    <div class=" hover-class ">
+                <div class="row mt-5 job-offer-cards justify-content-between text-center">
+                    <div class="col-lg-6 col-12 col-md-6 hover-class py-3 py-lg-0">
                         <h4 class="display-4 text-success">4,239</h4>
                         <p class="fs-5 fw-bolder">job offers around the world</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi natus magnam quo?</p>
@@ -299,7 +481,7 @@
                                 offers</button>
                         </div>
                     </div>
-                    <div class=" hover-class">
+                    <div class="col-lg-6 col-12 col-md-6 hover-class py-3 py-lg-0">
                         <img src="https://picsum.photos/id/633/600/400" class="img-fluid h-50" alt="">
                         <p class="fs-5 fw-bolder">Human Resources Whats new</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi natus magnam quo?</p>
@@ -318,7 +500,7 @@
 
             <div class="container">
                 <div class="row g-4">
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 col-md-4">
                         <div class="card overflow-hidden p-3 bg-white">
 
                             <img src="https://picsum.photos/id/1011/600/400" class="card-img-top" alt="...">
@@ -334,7 +516,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 col-md-4">
                         <div class="card overflow-hidden p-3 bg-white">
 
                             <img src="https://picsum.photos/id/1011/600/400" class="card-img-top" alt="...">
@@ -350,7 +532,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 col-md-4">
                         <div class="card overflow-hidden p-3 bg-white">
 
                             <img src="https://picsum.photos/id/1011/600/400" class="card-img-top" alt="...">
@@ -376,7 +558,7 @@
     </main>
     <footer class="bd-footer  mt-5 ">
         <div class="container  py-md-5 px-4 px-md-3 text-body-secondary">
-            <div class="row">   
+            <div class="row">
                 <div class="col-lg-3 mb-3">
                     <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/"
                         aria-label="Bootstrap">
@@ -468,7 +650,7 @@
 <script>
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 5,
         responsiveClass: true,
         responsive: {
             0: {
@@ -480,7 +662,7 @@
                 nav: false
             },
             1000: {
-                items: 5,
+                items: 4,
                 nav: true,
                 loop: true,
                 dots: true,

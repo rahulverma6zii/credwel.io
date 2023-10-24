@@ -1,3 +1,12 @@
+let insight = document.querySelector(".insights");
+let mybutton = document.getElementById("myBtn");
+let insight_buttons=document.getElementsByClassName("insight-buttons");
+
+window.addEventListener('scroll', () => {
+    document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+  },false);
+
+
 let insights_items = [
     {
         image: "https://img.freepik.com/free-photo/indian-businessman-with-his-white-car_496169-2889.jpg?w=360&t=st=1698077702~exp=1698078302~hmac=75006da43490a9194a278e68fc4d960975c45dc707ec5920e6d91ad0e247e3b2",
@@ -82,8 +91,7 @@ let insights_items = [
 
 
 ]
-let insight = document.querySelector(".insights");
-let mybutton = document.getElementById("myBtn");
+
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -98,17 +106,28 @@ function scrollFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
-insights_items.forEach((x => {
-    insight.innerHTML += `
-        <div class="item">
-        <div class="card">
-        <img class="card-img img-fluid" src="${x.image}" alt="">
-        <div class="card-img-overlay">
-            <h5 class="card-title">${x.cateogory}</h5>
-            <p class="card-text">${x.description}</p>
-        </div>
-        </div>
-    </div>
-   
-        `
-}))
+
+for (let i = 0; i < insight_buttons.length; i++) {
+    let element = insight_buttons[i];
+    element.addEventListener("click",(e)=>{
+        updateInsight(e);
+  
+    })
+    
+    
+}
+function updateInsight(param) {
+            if(param.innerHTML=="See All"){
+                insights_items.forEach((x)=>{
+                    insight.innerHTML+=` <div class="item">
+                    <div class="card">
+                    <img class="card-img img-fluid" src="${x.image}" alt="">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">${x.cateogory}</h5>
+                        <p class="card-text">${x.description}</p>
+                    </div>
+                    </div>
+                </div>`
+                })
+            }
+}

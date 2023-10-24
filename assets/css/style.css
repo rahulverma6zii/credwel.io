@@ -14,26 +14,66 @@ body {
   max-width: 90% !important;
   margin: auto !important;
 }
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+hr.section-divider{
+  color: white;
+  background-color: white;
+  margin: 100px 0px;
+}
+
+/* progressbar */
+
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to {
+    background-color: rgb(20, 255, 226);
+    width: 100%;
+  }
+}
 .hover-outline{
- 
-    --b: 0.1em;   /* the thickness of the line */
-    --c: #1095c1; /* the color */
-    
-    color: #0000;
-    padding-block: var(--b);
-    background: 
-      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-    -webkit-background-clip: text,padding-box;
-            background-clip: text,padding-box;
-    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
-  }
-  .hover-outine:hover {
-    --_p: 100%;
-    --_s: .3s;
-  }
+  position: relative;
+}
+.hover-outline::after{
+ content: "";
+ width:0px;
+ height: 0px ;
+ background-color:green;
+ position: absolute;
+ bottom: 0px;
+ left: 0px;
+ transition-duration: 0.5s;
+}
+.hover-outline:hover::after{
+    height: 3.5px;
+    width: 100% !important;
+    transition-duration: 0.5;
+}
+.hover-outline button{
+  border: none;
+  background-color: white;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
 
-
+}
 
 .main-background {
   background-image: url("https://img.freepik.com/free-photo/back-view-backpacker-raincoat-walking-rocky-path-autumn-forest_181624-51984.jpg?w=740&t=st=1698052368~exp=1698052968~hmac=c1d93769b33c958115bf7df8f8c626af77b02bf1379929c369f77314e3d860ce");
@@ -90,15 +130,15 @@ color: green;
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .job-offer-cards{
-display: flex;
-justify-content: space-between;
+/* display: flex;
+justify-content: space-between; */
 }
 .job-offer-cards> div{
-    width: 48%;
+    /* width: 48%;
     padding: 20px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 body > main > section:nth-child(5) > div > div.owl-carousel.insights.owl-loaded.owl-drag > div.owl-nav > button > span{
     font-size: 50px;
@@ -136,6 +176,13 @@ body > main > section:nth-child(5) > div > div.owl-carousel.insights.owl-loaded.
  height: 35%;
  transition-duration: 1s;
 }
+/* accordian */
+.accordian-body .card{
+  
+}
+
+
+
 /* headlines */
 
 footer {
