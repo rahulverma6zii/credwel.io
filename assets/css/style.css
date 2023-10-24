@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+body {
+  color: #0d1519;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background-color: F1EFEF;
+}
+.container {
+  width: 80% !important;
+  margin: auto !important;
+}
+.container-fluid {
+  width: 90% !important;
+  max-width: 90% !important;
+  margin: auto !important;
+}
+.hover-outline{
+ 
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .hover-outine:hover {
+    --_p: 100%;
+    --_s: .3s;
+  }
+
+
+
+.main-background {
+  background-image: url("https://img.freepik.com/free-photo/back-view-backpacker-raincoat-walking-rocky-path-autumn-forest_181624-51984.jpg?w=740&t=st=1698052368~exp=1698052968~hmac=c1d93769b33c958115bf7df8f8c626af77b02bf1379929c369f77314e3d860ce");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.fa {
+  cursor: pointer;
+}
+a {
+  text-decoration: none !important;
+}
+.social-icons li {
+  margin-inline: 5px;
+}
+div{
+    border-radius: 20px !important;
+}
+/* herosection */
+
+section
+ {
+  padding-bottom: 50px;
+  margin: 100px 0px;
+}
+.hero-section{
+    padding-bottom: 10px;
+   
+}
+.btn-success{
+    background-color: green;
+    color: white;
+}
+.btn-success:hover{
+background-color: white;
+border: green 1px solid;
+color: green;
+}
+.hover-class,.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.hover-class:hover,.card:hover {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.job-offer-cards{
+display: flex;
+justify-content: space-between;
+}
+.job-offer-cards> div{
+    width: 48%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+body > main > section:nth-child(5) > div > div.owl-carousel.insights.owl-loaded.owl-drag > div.owl-nav > button > span{
+    font-size: 50px;
+}
+body > main > section:nth-child(5) > div > div.owl-carousel.insights.owl-loaded.owl-drag > div.owl-nav {
+    text-align: center;
+}
+.insights .card{
+    width:100% !important;
+    height: 400px;
+    overflow: hidden;
+}
+.insights .card img{
+  height: 100%;
+ 
+
+
+}.card-img-overlay {
+  background-color: white;
+  position: absolute;
+  /* top: 0; */
+  border-radius: 0px !important;
+  height:25%;
+  top:75%;
+  padding: 10px;
+  left: 0px;
+  width: 90%;
+  transition-duration: 1s;
+  border-radius: 20px !important;
+
+}
+.card-img-overlay:hover{
+ width: 100%;
+ top:65%;
+ height: 35%;
+ transition-duration: 1s;
+}
+/* headlines */
+
+footer {
+    background-color: rgb(2, 41, 41) !important;
+    color: white !important;
+    height: 400px;
+}
+footer a{
+    color: white !important;
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:green; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 60%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 50px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media (min-width: 992px) {
+  .prenav {
+    color: #6b6e71;
+    left: 0;
+    padding: 20px 0;
+   
+    width: 100%;
+  }
+  nav.navbar {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: sticky !important;
+    top: 0px;
+   
+   
+    z-index: 99;
+    padding: 17px 0px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 80px;
+  }
+  nav.navbar .container-fluid {
+  }
+
+  .headlines-card .card:nth-child(n) {
+    height: 500px;
+  }
+ .headlines-card .firstcard{
+    flex-direction: row !important;
+ }
+}
