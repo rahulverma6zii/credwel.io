@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("header.css");
 body {
   color: #0d1519;
   font-family: "Roboto", sans-serif;
@@ -23,9 +24,18 @@ body {
   /* These last 2 properites clean up overshoot weirdness */
   animation-iteration-count: 1;
   animation-fill-mode: both;
+  --primary-color: #8fa7d3;
+  --secondary-color:black;
 }
 
-hr.section-divider{
+.primary-colour {
+  color: var(--primary-color) !important;
+}
+.primary-colour:hover {
+  background-color: black !;
+  color: white !;
+}
+hr.section-divider {
   color: white;
   background-color: white;
   margin: 50px 0px;
@@ -48,35 +58,34 @@ hr.section-divider{
     width: 100%;
   }
 }
-.hover-outline{
+.hover-outline {
   position: relative;
 }
-.hover-outline::after{
- content: "";
- width:0px;
- height: 0px ;
- background-color:green;
- position: absolute;
- bottom: 0px;
- left: 0px;
- transition-duration: 0.5s;
+.hover-outline::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition-duration: 0.5s;
 }
-.hover-outline:hover::after{
-    height: 3.5px;
-    width: 100% !important;
-    transition-duration: 0.5;
+.hover-outline:hover::after {
+  height: 3.5px;
+  width: 100% !important;
+  transition-duration: 0.5;
 }
-.hover-outline button{
+.hover-outline button {
   border: none;
   background-color: white;
   width: 100%;
   font-size: 20px;
   font-weight: 800;
-
 }
 
 .main-background {
-  background-image: url("https://img.freepik.com/free-photo/back-view-backpacker-raincoat-walking-rocky-path-autumn-forest_181624-51984.jpg?w=740&t=st=1698052368~exp=1698052968~hmac=c1d93769b33c958115bf7df8f8c626af77b02bf1379929c369f77314e3d860ce");
+  background-image: url("https://img.freepik.com/free-photo/beautiful-shot-crystal-clear-lake-snowy-mountain-base-during-sunny-day_181624-5459.jpg?w=740&t=st=1698225252~exp=1698225852~hmac=49f2cd931fe9ab7f4f424c71ea670455272bcd6bfff808188bd0ef9333c7734a");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,6 +95,7 @@ hr.section-divider{
   top: 0;
   width: 100%;
   z-index: -2;
+  filter: brightness(0.5);
 }
 
 .fa {
@@ -97,106 +107,103 @@ a {
 .social-icons li {
   margin-inline: 5px;
 }
-div{
-    border-radius: 20px !important;
+div {
+  border-radius: 20px !important;
 }
 /* herosection */
-
-section
- {
-
+img{
+  max-width: 100%;
+  
 }
-.hero-section{
-    padding-bottom: 10px;
-   
+section {
 }
-.btn-success{
-    background-color: green;
-    color: white;
+.hero-section {
+  margin-bottom: 120px;
 }
-.btn-success:hover{
-background-color: white;
-border: green 1px solid;
-color: green;
+.btn-success {
+  background-color: var(--primary-color);
+  color: white;
 }
-#joinus .row:nth-child(2) .hover-class{
+.btn-success:hover {
+  background-color: var(--secondary-color);
+  border: none;
+color: white;
+  
+}
+#joinus .row:nth-child(2) .hover-class {
   height: 300px;
 }
-.hover-class,.card {
+.card{
+  height: 400px;
+
+}
+.card img{
+  height: 250px ;
+}
+.hover-class,
+.card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: hidden;
+
 }
 
-.hover-class:hover,.card:hover {
+.hover-class:hover,
+.card:hover {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-.job-offer-cards{
-/* display: flex;
+.job-offer-cards {
+  /* display: flex;
 justify-content: space-between; */
 }
-.job-offer-cards> div{
-    /* width: 48%;
+.job-offer-cards > div {
+  /* width: 48%;
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column; */
 }
-body > main > section:nth-child(5) > div > div.owl-carousel.insights.owl-loaded.owl-drag > div.owl-nav > button > span{
-    font-size: 50px;
+
+.insights .card {
+  width: 100% !important;
+  height: 400px;
+  overflow: hidden;
 }
-body > main > section:nth-child(5) > div > div.owl-carousel.insights.owl-loaded.owl-drag > div.owl-nav {
-    text-align: center;
-}
-.insights .card{
-    width:100% !important;
-    height: 400px;
-    overflow: hidden;
-}
-.insights .card img{
+.insights .card img {
   height: 100%;
- 
-
-
-}.card-img-overlay {
+}
+.card-img-overlay {
   background-color: white;
   position: absolute;
   /* top: 0; */
   border-radius: 0px !important;
-  height:25%;
-  top:75%;
+  height: 25%;
+  top: 75%;
   padding: 10px;
   left: 0px;
   width: 90%;
   transition-duration: 1s;
   border-radius: 20px !important;
-
 }
-.card-img-overlay:hover{
- width: 100%;
- top:65%;
- height: 35%;
- transition-duration: 1s;
-}
-/* accordian */
-.accordian-body .card{
-  
+.card-img-overlay:hover {
+  width: 100%;
+  top: 65%;
+  height: 35%;
+  transition-duration: 1s;
 }
 
 
-
-/* headlines */
 
 footer {
-    background-color: rgb(2, 41, 41) !important;
-    color: white !important;
-    height: 400px;
+  background-color:black;
+  color: white !important;
+ 
 }
-footer a{
-    color: white !important;
+footer a {
+  color: white !important;
 }
-
 
 #myBtn {
   display: none; /* Hidden by default */
@@ -206,7 +213,7 @@ footer a{
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color:green; /* Set a background color */
+  background-color: var(--primary-color); /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -216,36 +223,19 @@ footer a{
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: var(--secondary-color)/* Add a dark-grey background on hover */
 }
 
 @media (min-width: 992px) {
-  .prenav {
-    color: #6b6e71;
-    left: 0;
-    padding: 20px 0;
-   
-    width: 100%;
-  }
-  nav.navbar {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    position: sticky !important;
-    top: 0px;
-   
-   
-    z-index: 99;
-    padding: 17px 0px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    min-height: 80px;
-  }
-  nav.navbar .container-fluid {
-  }
-
   .headlines-card .card:nth-child(n) {
     height: 500px;
   }
- .headlines-card .firstcard{
+  .headlines-card .firstcard {
     flex-direction: row !important;
- }
+  }
+}
+@media screen and (max-width:992px) {
+  .hero-section {
+    margin-top: 300px;
+  }
 }

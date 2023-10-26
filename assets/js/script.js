@@ -1,6 +1,7 @@
 let insight = document.querySelector(".insights");
 let mybutton = document.getElementById("myBtn");
 let insight_buttons=document.getElementsByClassName("insight-buttons");
+let navbar=document.getElementsByClassName("navbar")[0];
 
 window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
@@ -94,10 +95,18 @@ let insights_items = [
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       mybutton.style.display = "block";
+    //   navbar.classList.remove("navbar-light");
+    //   navbar.classList.add("navbar-dark");
+      navbar.classList.add("modified-nav");
+      navbar.classList.add("position-fixed")
+    
     } else {
+        // navbar.classList.remove("navbar-dark");
+        // navbar.classList.add("navbar-light")
       mybutton.style.display = "none";
+      navbar.classList.remove("modified-nav");
     }
   }
   

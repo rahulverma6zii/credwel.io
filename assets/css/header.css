@@ -1,0 +1,56 @@
+
+#offcanvasNavbar{
+    margin-right: 4%;
+    font-weight: 800;
+}
+
+.nav-item{
+    margin-inline: 20px;
+}
+.modified-nav{
+    position: fixed;
+    top:0px !important;
+    width: 100%;
+   
+  }
+  .modified-nav div{
+    background-color: none !important;
+  }
+
+@media (min-width: 992px) {
+    header{
+        height: 150px;
+   }
+  .prenav {
+    color: #6b6e71;
+    left: 0;
+    padding: 20px 0;
+   
+    width: 100%;
+  }
+  nav.navbar {
+   
+    top: 10%;
+    z-index: 99;
+   
+   
+  }
+  .nav-link{
+   
+  }
+  nav.navbar > div{
+    
+  }
+  
+
+ 
+}
+@media screen and (max-width:992px) {
+    nav.navbar {
+   
+        top: 0px !important;
+        z-index: 99;
+       
+       
+      }
+}
