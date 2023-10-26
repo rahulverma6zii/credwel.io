@@ -2,7 +2,13 @@ let insight = document.querySelector(".insights");
 let mybutton = document.getElementById("myBtn");
 let insight_buttons=document.getElementsByClassName("insight-buttons");
 let navbar=document.getElementsByClassName("navbar")[0];
+let img=document.getElementsByTagName("img")
 
+for (let i = 0; i < img.length; i++) {
+    const element = img[i];
+    element.classList.add("img-fluid")
+    
+}
 window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
   },false);
