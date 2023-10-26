@@ -38,7 +38,7 @@ body {
 hr.section-divider {
   color: white;
   background-color: white;
-  margin: 50px 0px;
+  margin: 40px 0px;
 }
 
 /* progressbar */
@@ -123,6 +123,7 @@ section {
 .btn-success {
   background-color: var(--primary-color);
   color: white;
+  border: none;
 }
 .btn-success:hover {
   background-color: var(--secondary-color);
