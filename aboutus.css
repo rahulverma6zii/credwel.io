@@ -1,0 +1,23 @@
+.card{
+        height: 150px !important;
+        overflow: hidden;
+        cursor: pointer;
+}
+.card .row div:nth-child(1) {
+  overflow: hidden;
+  border-radius: 0%;
+  
+}
+.card img{
+  object-fit: cover;
+ 
+ filter: brightness(0.5);
+  
+}
+.card:hover img{
+filter: brightness(1);
+ 
+}
+.card-title{
+  font-weight: 700;
+}
