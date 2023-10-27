@@ -16,11 +16,11 @@
   .modified-nav div{
     background-color: none !important;
   }
-
+  header{
+    height: 150px;
+}
 @media (min-width: 992px) {
-    header{
-        height: 150px;
-   }
+    
   .prenav {
     color: #6b6e71;
     left: 0;

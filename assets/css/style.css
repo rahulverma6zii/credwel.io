@@ -6,15 +6,6 @@ body {
   overflow-x: hidden;
   background-color: F1EFEF;
 }
-.container {
-  width: 80% !important;
-  margin: auto !important;
-}
-.container-fluid {
-  width: 90% !important;
-  max-width: 90% !important;
-  margin: auto !important;
-}
 
 :root * {
   /* Pause the animation */
@@ -24,8 +15,8 @@ body {
   /* These last 2 properites clean up overshoot weirdness */
   animation-iteration-count: 1;
   animation-fill-mode: both;
-  --primary-color: #8fa7d3;
-  --secondary-color:black;
+  --primary-color:green;
+  --secondary-color: black;
 }
 
 .primary-colour {
@@ -85,7 +76,7 @@ hr.section-divider {
 }
 
 .main-background {
-  background-image: url("https://img.freepik.com/free-photo/beautiful-shot-crystal-clear-lake-snowy-mountain-base-during-sunny-day_181624-5459.jpg?w=740&t=st=1698225252~exp=1698225852~hmac=49f2cd931fe9ab7f4f424c71ea670455272bcd6bfff808188bd0ef9333c7734a");
+  background-image: url("https://img.freepik.com/premium-photo/businessman-analyzing-company-financial-report-with-augmented-reality-graphics_34141-360.jpg?w=826");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,8 +87,16 @@ hr.section-divider {
   width: 100%;
   z-index: -2;
   filter: brightness(0.5);
+  opacity: 1;
+  animation: fadeHeader 7s ease-in-out;
 }
-
+@keyframes fadeHeader {
+  0% {
+    filter: blur(50px) brightness(0.4);
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
 .fa {
   cursor: pointer;
 }
@@ -111,42 +110,30 @@ div {
   border-radius: 20px !important;
 }
 /* herosection */
-img{
+img {
   max-width: 100%;
-  
 }
 section {
 }
 .hero-section {
   margin-bottom: 120px;
 }
-.btn-success {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-}
-.btn-success:hover {
-  background-color: var(--secondary-color);
-  border: none;
-color: white;
-  
-}
+
 #joinus .row:nth-child(2) .hover-class {
   height: 300px;
 }
-.card{
+.card {
   height: 400px;
-
 }
-.card img{
-  height: 250px ;
+.card img {
+  height: 250px;
+  object-fit: cover;
 }
 .hover-class,
 .card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 .hover-class:hover,
@@ -190,17 +177,14 @@ justify-content: space-between; */
 }
 .card-img-overlay:hover {
   width: 100%;
-  top: 65%;
-  height: 35%;
+  top: 70%;
+  height: 30%;
   transition-duration: 1s;
 }
 
-
-
 footer {
-  background-color:black !important;
+  background-color: black !important;
   color: white !important;
- 
 }
 footer a {
   color: white !important;
@@ -224,9 +208,22 @@ footer a {
 }
 
 #myBtn:hover {
-  background-color: var(--secondary-color)/* Add a dark-grey background on hover */
+  background-color: var(
+    --secondary-color
+  ); /* Add a dark-grey background on hover */
 }
-
+.othercards .card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.ourteamrow .card{
+  height: 470px;
+  
+}
+/* desktop view */
 @media (min-width: 992px) {
   .headlines-card .card:nth-child(n) {
     height: 500px;
@@ -234,9 +231,42 @@ footer a {
   .headlines-card .firstcard {
     flex-direction: row !important;
   }
-}
-@media screen and (max-width:992px) {
+  
+  header{
+    height: 180px;
+  }
   .hero-section {
-    margin-top: 300px;
+    margin-top: 120px;
+  }
+}
+
+/* mobile and tab view */
+@media screen and (max-width: 992px) {
+  .main-background{
+    height: 70vh;
+  }
+  .container {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .container-fluid {
+    width: 100% !important;
+ 
+    margin: auto !important;
+  }
+  
+  header{
+    height: 80px;
+  }
+  .hero-section {
+    margin-top: 100px;
+  }
+  .firstcard img{
+    width: 100% !important ;
+    height: 50% !important;
+    object-fit: cover;
+  }
+  .headlines-card .card:nth-child(n) {
+    height: max-content
   }
 }

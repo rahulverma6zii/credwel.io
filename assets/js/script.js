@@ -1,148 +1,171 @@
 let insight = document.querySelector(".insights");
 let mybutton = document.getElementById("myBtn");
-let insight_buttons=document.getElementsByClassName("insight-buttons");
-let navbar=document.getElementsByClassName("navbar")[0];
-let img=document.getElementsByTagName("img")
-
-for (let i = 0; i < img.length; i++) {
-    const element = img[i];
-    element.classList.add("img-fluid")
-    
-}
-window.addEventListener('scroll', () => {
-    document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-  },false);
-
+let insight_buttons = document.getElementsByClassName("insight-buttons");
+let navbar = document.getElementsByClassName("navbar")[0];
+let img = document.getElementsByTagName("img");
 
 let insights_items = [
-    {
-        image: "https://img.freepik.com/free-photo/indian-businessman-with-his-white-car_496169-2889.jpg?w=360&t=st=1698077702~exp=1698078302~hmac=75006da43490a9194a278e68fc4d960975c45dc707ec5920e6d91ad0e247e3b2",
-        description: "Customer Experience",
-        cateogory: "Innovation",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/lady-with-brown-eyes-is-smiling-red-wall_197531-16958.jpg?t=st=1698077692~exp=1698078292~hmac=ede14142ee6abff1de8350825a9b532d4d92eb2117ac2553e745609421e2a178",
-        description: "Means of Payment",
-        cateogory: "Innovation",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/young-modern-man-glasses-casual-outfit-standing-against-blue-background-smiling-happy-camera_1258-65394.jpg?w=740&t=st=1698077792~exp=1698078392~hmac=3b74f2f6742da3752d7190a6de8d5078cf0e6de3533c9ec073df0256c25ba27e",
-        description: "Sustainable Mobility",
-        cateogory: "Innovation",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/successful-businessman_1098-18155.jpg?w=360&t=st=1698078027~exp=1698078627~hmac=67b0bb790174fb94ac3eba7b75da3923fe5998ed4d6aec7ce783478d505eeef2",
-        description: "Open innovation",
-        cateogory: "Innovation",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/indian-businessman-with-his-white-car_496169-2889.jpg?w=360&t=st=1698077702~exp=1698078302~hmac=75006da43490a9194a278e68fc4d960975c45dc707ec5920e6d91ad0e247e3b2",
-        description: "Beyond Banking",
-        cateogory: "Innovation",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/young-beautiful-smiling-female-trendy-summer-white-dress-sexy-carefree-woman-posing-near-blue-wall-studio-positive-model-having-fun-cheerful-happy-isolated_158538-25710.jpg?w=740&t=st=1698077818~exp=1698078418~hmac=263cd1e782c587855893855293de15a9460874d16ead3c0833b455a17e748cbc",
-        description: "Energy transition and climate action",
-        cateogory: "Transitions",
-
-    },
-
-
-    {
-        image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
-        description: "Natural Capacity and biodiversity",
-        cateogory: "Transitions",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
-        description: "Cultural economy",
-        cateogory: "Transitions",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
-        description: "Responsible savings and investments",
-        cateogory: "Transitions",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
-        description: "Our experts in sustainable finance",
-        cateogory: "Transitions",
-
-    },
-    {
-        image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
-        description: "finance and social inclusion",
-        cateogory: "Inclusions",
-
-    }, {
-        image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
-        description: "Diversity ,Equality and Inclusion",
-        cateogory: "Inclusions",
-
-    }
-    , {
-        image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
-        description: "Social Enterprenaurship",
-        cateogory: "Inclusions",
-
-    }
-
+  {
+    image: "https://img.freepik.com/free-photo/indian-businessman-with-his-white-car_496169-2889.jpg?w=360&t=st=1698077702~exp=1698078302~hmac=75006da43490a9194a278e68fc4d960975c45dc707ec5920e6d91ad0e247e3b2",
+    description: "Natural Capacity and biodiversity",
+    cateogory: "Transitions",
+  },
+  {
+    image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
+    description: "Cultural economy",
+    cateogory: "Transitions",
+  },
+  {
+    image: "https://img.freepik.com/free-photo/smart-confidence-asian-female-startup-entrepreneur-small-business-owner-businesswoman-wear-smart-casual-cloth-smile-hand-use-tablet-woking-inventory-checking-showroom-office-daytime-background_609648-342.jpg?t=st=1698393297~exp=1698393897~hmac=d2f98ac3ab9297d07577d02af8844fd56850e6b091b8c544556fba5e1cf3e819",
+    description: "Responsible savings and investments",
+    cateogory: "Transitions",
+  },
+  {
+    image: "https://img.freepik.com/free-photo/teammates-preparing-objectives_23-2147577239.jpg?1&w=740&t=st=1698398956~exp=1698399556~hmac=e1e9785c485af7f2a905a41077908ea6ceb6dec0e23615430e2cee1d1d29bf28",
+    description: "Our experts in sustainable finance",
+    cateogory: "Transitions",
+  },
+  {
+    image: "https://img.freepik.com/free-photo/indian-businessman-with-his-white-car_496169-2889.jpg?w=360&t=st=1698398985~exp=1698399585~hmac=7f589ca18638fd808e7947f4fe1cba63a355a7791c743aacf8e8560038b5f8bf",
+    description: "finance and social inclusion",
+    cateogory: "Inclusion",
+  }, {
+    image: "https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?w=740&t=st=1698399008~exp=1698399608~hmac=e650416aff382515b6d2657884ca79ee0192f27058a11c5847dc39bce125af95",
+    description: "Diversity ,Equality and Inclusion",
+    cateogory: "Inclusion",
+  }
+  , {
+    image: "https://img.freepik.com/free-photo/portrait-smiley-businessman-close-up_23-2148746290.jpg?w=740&t=st=1698399283~exp=1698399883~hmac=9af5365356f4e7283ce67ee645c2f55e12703d065e1fe65113d162a866487331",
+    description: "Social Enterprenaurship",
+    cateogory: "Inclusion",
+  },
+  {
+    image: "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1698077692~exp=1698078292~hmac=6c83d90b762a73d2458d42ee4631aa6560569b469ad444abc31fe04ad776cd00",
+    description: "Social Enterprenaurship",
+    cateogory: "Innovation",
+  }
 
 
 ]
+insights_items.forEach((x => {
+  insight.innerHTML += `
+  <div class="col-12 col-lg-3 col-md-6">
+  <div class="card">
+  <img class="card-img img-fluid" src="${x.image}" alt="">
+  <div class="card-img-overlay">
+      <h5 class="card-title fw-bolder">${x.cateogory}</h5>
+      <p class="card-text">${x.description}</p>
+  </div>
+  </div>
+</div>
+ 
+      `
+}))
 
-window.onscroll = function() {scrollFunction()};
+for (let i = 0; i < img.length; i++) {
+  const element = img[i];
+  element.classList.add("img-fluid")
+
+}
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
+
+
+
+
+window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      mybutton.style.display = "block";
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
     //   navbar.classList.remove("navbar-light");
     //   navbar.classList.add("navbar-dark");
-      navbar.classList.add("modified-nav");
-      navbar.classList.add("position-fixed")
-    
-    } else {
-        // navbar.classList.remove("navbar-dark");
-        // navbar.classList.add("navbar-light")
-      mybutton.style.display = "none";
-      navbar.classList.remove("modified-nav");
-    }
+    navbar.classList.add("modified-nav");
+    navbar.classList.add("position-fixed")
+
+  } else {
+    // navbar.classList.remove("navbar-dark");
+    // navbar.classList.add("navbar-light")
+    mybutton.style.display = "none";
+    navbar.classList.remove("modified-nav");
   }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 for (let i = 0; i < insight_buttons.length; i++) {
-    let element = insight_buttons[i];
-    element.addEventListener("click",(e)=>{
-        updateInsight(e);
-  
-    })
-    
-    
+
+  insight_buttons[i].addEventListener("click", (e) => {
+    updateInsight(insight_buttons[i].innerHTML);
+
+  })
+
+
 }
 function updateInsight(param) {
-            if(param.innerHTML=="See All"){
-                insights_items.forEach((x)=>{
-                    insight.innerHTML+=` <div class="item">
-                    <div class="card">
-                    <img class="card-img img-fluid" src="${x.image}" alt="">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">${x.cateogory}</h5>
-                        <p class="card-text">${x.description}</p>
-                    </div>
-                    </div>
-                </div>`
-                })
-            }
+
+  if (param == "See All") {
+    insight.innerHTML = "";
+    insights_items.forEach((x) => {
+      insight.innerHTML += ` 
+      <div class="col-12 col-lg-3 col-md-6">
+      <div class="card">
+      <img class="card-img img-fluid" src="${x.image}" alt="">
+      <div class="card-img-overlay">
+          <h5 class="card-title fw-bolder">${x.cateogory}</h5>
+          <p class="card-text">${x.description}</p>
+      </div>
+      </div>
+  </div>`
+    })
+  }
+  else {
+
+    insight.innerHTML = "";
+
+    insights_items.forEach((x) => {
+      if (x.cateogory == param) {
+        insight.innerHTML += ` 
+        <div class="col-12 col-lg-3 col-md-6">
+                  <div class="card">
+                  <img class="card-img img-fluid" src="${x.image}" alt="">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title fw-bolder">${x.cateogory}</h5>
+                      <p class="card-text">${x.description}</p>
+                  </div>
+                  </div>
+              </div>`
+      }
+    })
+  }
+
+
 }
+function updateCarousel() {
+
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 3,
+        nav: false
+      },
+      1000: {
+        items: 4,
+        nav: true,
+        loop: true,
+        dots: true,
+      }
+    }
+  })
+}
+updateCarousel();
