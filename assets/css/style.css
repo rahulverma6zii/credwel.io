@@ -80,7 +80,7 @@ hr.section-divider {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 617px;
   left: 0;
   position: absolute;
   top: 0;
@@ -106,9 +106,7 @@ a {
 .social-icons li {
   margin-inline: 5px;
 }
-div {
-  border-radius: 20px !important;
-}
+
 /* herosection */
 img {
   max-width: 100%;
@@ -183,13 +181,17 @@ justify-content: space-between; */
 }
 
 footer {
-  background-color: black !important;
-  color: white !important;
+ background-color: rgb(2, 56, 2);
+ 
 }
-footer a {
-  color: white !important;
+.fa-linkedin-square{
+  bottom: 10px;
+  top: -21px;
+  left: 95%;
+  position: absolute;
+  font-size: 48px;
+  color: white;
 }
-
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -242,9 +244,7 @@ footer a {
 
 /* mobile and tab view */
 @media screen and (max-width: 992px) {
-  .main-background{
-    height: 70vh;
-  }
+ 
   .container {
     width: 90% !important;
     margin: auto !important;
@@ -269,4 +269,11 @@ footer a {
   .headlines-card .card:nth-child(n) {
     height: max-content
   }
+  .fa-linkedin-square{
+  bottom: 10px;
+  top: -85%;
+  left: 45%;
+  position: absolute;
+  font-size: 48px;
+  color: white;}
 }

@@ -21,3 +21,8 @@ filter: brightness(1);
 .card-title{
   font-weight: 700;
 }
+@media screen and (max-width:567px) {
+  .card{
+    height: 450px !important;
+  }
+}
