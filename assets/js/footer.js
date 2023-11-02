@@ -34,7 +34,7 @@ footer.innerHTML = `
 </div>
 </div>
 
-<p class="text-center text-white currentYear">©2023 CREDWEL</p>
+<p class="text-center text-white currentYear"></p>
 `
 let currentYear = document.getElementsByClassName("currentYear");
 currentYear[0].innerHTML = `©${new Date().getFullYear()} CREDWEL`;

@@ -3,7 +3,7 @@ let header=document.getElementsByTagName("header")[0];
 let headerContent=`  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 <div class="container">
 
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="index.html">
        <img src="images/logo.jpg" class="logo" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
