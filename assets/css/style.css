@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
 @import url("header.css");
 body {
   color: #0d1519;
@@ -31,7 +32,13 @@ hr.section-divider {
   background-color: white;
   margin: 40px 0px;
 }
-
+nav.navbar{
+ 
+  border-radius: 10px;
+  margin: auto;
+  width: 88%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 /* progressbar */
 
 .progress {
@@ -88,7 +95,7 @@ hr.section-divider {
   z-index: -2;
   filter: brightness(0.5);
   opacity: 1;
-  animation: fadeHeader 7s ease-in-out;
+  animation: fadeHeader 3s ease-in-out;
 }
 @keyframes fadeHeader {
   0% {
@@ -238,14 +245,14 @@ footer {
     height: 180px;
   }
   .hero-section {
-    margin-top: 120px;
+    
   }
 }
 
 /* mobile and tab view */
 @media screen and (max-width: 992px) {
  
-  .container {
+  /* .container {
     width: 90% !important;
     margin: auto !important;
   }
@@ -253,7 +260,7 @@ footer {
     width: 100% !important;
  
     margin: auto !important;
-  }
+  } */
   
   header{
     height: 80px;
