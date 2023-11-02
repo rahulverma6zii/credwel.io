@@ -174,17 +174,18 @@ justify-content: space-between; */
   border-radius: 0px !important;
   height: 25%;
   top: 75%;
-  padding: 10px;
+  
   left: 0px;
   width: 90%;
   transition-duration: 1s;
-  border-radius: 20px !important;
+ 
 }
 .card-img-overlay:hover {
   width: 100%;
   top: 70%;
   height: 30%;
   transition-duration: 1s;
+  cursor: pointer;
 }
 
 footer {
