@@ -47,20 +47,20 @@ let insights_items = [
 
 
 ]
-insights_items.forEach((x => {
-  insight.innerHTML += `
-  <div class="col-12 col-lg-3 col-md-6">
-  <div class="card">
-  <img class="card-img img-fluid" src="${x.image}" alt="">
-  <div class="card-img-overlay">
-      <h5 class="card-title fw-bolder">${x.cateogory}</h5>
-      <p class="card-text">${x.description}</p>
-  </div>
-  </div>
-</div>
+// insights_items.forEach((x => {
+//   insight.innerHTML += `
+//   <div class="col-12 col-lg-3 col-md-6">
+//   <div class="card">
+//   <img class="card-img img-fluid" src="${x.image}" alt="">
+//   <div class="card-img-overlay">
+//       <h5 class="card-title fw-bolder">${x.cateogory}</h5>
+//       <p class="card-text">${x.description}</p>
+//   </div>
+//   </div>
+// </div>
  
-      `
-}))
+//       `
+// }))
 
 for (let i = 0; i < img.length; i++) {
   const element = img[i];
@@ -108,9 +108,10 @@ for (let i = 0; i < insight_buttons.length; i++) {
 }
 function updateInsight(param) {
 
-  if (param == "See All") {
+  if (param == "See All" || param=="") {
     insight.innerHTML = "";
-    insights_items.forEach((x) => {
+    insights_items.forEach((x,index) => {
+      if(index<=3){
       insight.innerHTML += ` 
       <div class="col-12 col-lg-3 col-md-6">
       <div class="card">
@@ -121,7 +122,7 @@ function updateInsight(param) {
       </div>
       </div>
   </div>`
-    })
+    }})
   }
   else {
 
@@ -169,3 +170,4 @@ function updateCarousel() {
   })
 }
 updateCarousel();
+updateInsight("");

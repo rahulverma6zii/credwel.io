@@ -30,7 +30,7 @@ let headerContent=`  <nav class="navbar navbar-expand-lg navbar-light bg-light f
            <a class="nav-link" href="index.html#services">Services</a>
        </li>
        <li class="p-0 mx-5 nav-item hover-outline">
-           <a class="nav-link btn-success" href="contact.html">Contact Us</a>
+           <a class="nav-link btn-dark" href="contact.html">Contact Us</a>
        </li>
 
 

@@ -16,8 +16,8 @@ body {
   /* These last 2 properites clean up overshoot weirdness */
   animation-iteration-count: 1;
   animation-fill-mode: both;
-  --primary-color:green;
-  --secondary-color: black;
+  --primary-color:black;
+  
 }
 
 .primary-colour {
@@ -182,21 +182,20 @@ justify-content: space-between; */
 }
 .card-img-overlay:hover {
   width: 100%;
-  top: 70%;
-  height: 30%;
-  transition-duration: 1s;
+  /* top: 70%;
+  height: 30%; */
+  transition-duration: 0.5s;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 footer {
- background-color: rgb(2, 56, 2);
+ background-color: black;
  
 }
 .fa-linkedin-square{
-  bottom: 10px;
-  top: -21px;
-  left: 95%;
-  position: absolute;
+ 
   font-size: 48px;
   color: white;
 }
@@ -262,7 +261,10 @@ footer {
  
     margin: auto !important;
   } */
-  
+  .ourteamrow .card{
+    height: max-content;
+    
+  }
   header{
     height: 80px;
   }

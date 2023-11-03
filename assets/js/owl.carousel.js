@@ -2371,7 +2371,7 @@
 				url: '//vimeo.com/api/v2/video/' + video.id + '.json',
 				jsonp: 'callback',
 				dataType: 'jsonp',
-				success: function(data) {
+				dark: function(data) {
 					path = data[0].thumbnail_large;
 					create(path);
 				}
@@ -2382,7 +2382,7 @@
 				url: '//vzaar.com/api/videos/' + video.id + '.json',
 				jsonp: 'callback',
 				dataType: 'jsonp',
-				success: function(data) {
+				dark: function(data) {
 					path = data.framegrab_url;
 					create(path);
 				}
@@ -3182,19 +3182,19 @@
 	 * @protected
 	 * @returns {Number}
 	 */
-	Navigation.prototype.getPosition = function(successor) {
+	Navigation.prototype.getPosition = function(darkor) {
 		var position, length,
 			settings = this._core.settings;
 
 		if (settings.slideBy == 'page') {
 			position = $.inArray(this.current(), this._pages);
 			length = this._pages.length;
-			successor ? ++position : --position;
+			darkor ? ++position : --position;
 			position = this._pages[((position % length) + length) % length].start;
 		} else {
 			position = this._core.relative(this._core.current());
 			length = this._core.items().length;
-			successor ? position += settings.slideBy : position -= settings.slideBy;
+			darkor ? position += settings.slideBy : position -= settings.slideBy;
 		}
 
 		return position;
