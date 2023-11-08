@@ -1,3 +1,4 @@
+
 let header=document.getElementsByTagName("header")[0];
 
 let headerContent=`  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -10,7 +11,7 @@ let headerContent=`  <nav class="navbar navbar-expand-lg navbar-light bg-light f
     aria-controls="offcanvasNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
     aria-labelledby="offcanvasNavbarLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CREDWEL</h5>

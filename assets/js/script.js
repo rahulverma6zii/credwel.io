@@ -47,6 +47,7 @@ let insights_items = [
 
 
 ]
+
 // insights_items.forEach((x => {
 //   insight.innerHTML += `
 //   <div class="col-12 col-lg-3 col-md-6">
@@ -171,3 +172,4 @@ function updateCarousel() {
 }
 updateCarousel();
 updateInsight("");
+console.clear();

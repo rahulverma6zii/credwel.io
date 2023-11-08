@@ -1,9 +1,6 @@
-let script = document.createElement('script');
 
-script.src =
-    "https://kit.fontawesome.com/a076d05399.js";
 
-document.head.appendChild(script);
+
 let footer = document.getElementsByTagName("footer")[0];
 
 footer.innerHTML = `

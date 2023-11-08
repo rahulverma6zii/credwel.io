@@ -30,7 +30,7 @@ body {
 hr.section-divider {
   color: white;
   background-color: white;
-  margin: 40px 0px;
+  margin: 22px 0px;
 }
 nav.navbar{
  
@@ -121,6 +121,7 @@ img {
 section {
 }
 .hero-section {
+  height: 400px;  ;
   margin-bottom: 120px;
 }
 
@@ -131,7 +132,7 @@ section {
   height: 400px;
 }
 .card img {
-  height: 250px;
+  /* height: 250px; */
   object-fit: cover;
 }
 .hover-class,
@@ -213,13 +214,11 @@ footer {
   padding: 15px; /* Some padding */
   border-radius: 60%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
-  width: 50px;
+  width: 55px;
 }
 
 #myBtn:hover {
-  background-color: var(
-    --secondary-color
-  ); /* Add a dark-grey background on hover */
+ 
 }
 .othercards .card {
   height: 200px;
@@ -228,10 +227,7 @@ footer {
   justify-content: center;
   
 }
-.ourteamrow .card{
-  height: 470px;
-  
-}
+
 /* desktop view */
 @media (min-width: 992px) {
   .headlines-card .card:nth-child(n) {
@@ -247,6 +243,11 @@ footer {
   .hero-section {
     
   }
+  .ourteamrow .card{
+    height:405px;
+    
+  }
+ 
 }
 
 /* mobile and tab view */
@@ -261,15 +262,12 @@ footer {
  
     margin: auto !important;
   } */
-  .ourteamrow .card{
-    height: max-content;
-    
-  }
+ 
   header{
     height: 80px;
   }
   .hero-section {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .firstcard img{
     width: 100% !important ;
@@ -286,4 +284,15 @@ footer {
   position: absolute;
   font-size: 48px;
   color: white;}
+
+.ourteamrow .card{
+  height: 450px;
+
+}
+}
+@media screen and (max-width:992px) and (min-width:567px) {
+  .ourteamrow .card{
+    height:500px;
+  
+  }
 }
