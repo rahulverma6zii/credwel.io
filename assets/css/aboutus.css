@@ -1,3 +1,8 @@
+body{
+  text-align: justify;
+}
+
+
 .card{
         height: 200px !important;
         overflow: hidden;
@@ -21,6 +26,37 @@ filter: brightness(1);
 }
 .card-title{
   font-weight: 700;
+}
+.overlay-background2{
+  
+  top:-8%;
+  left: -2%;
+  height: 90%;
+  width: 90%;
+  position:absolute;
+  background-color: rgb(108, 184, 158);
+  transition-duration: 0.5s;
+}
+ .about-image:hover .overlay-background2{
+  top:+15%;
+  left: +10%;
+  transition-duration: 0.5s;
+}
+ img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.about-image .overlay-background3{
+  top:-10px;
+  right: -10px;
+  z-index: -1;
+  height: 90%;
+  width: 90%;
+  background-color: rgb(72, 31, 105);
+  transition-duration: 0.5s;
+}
+.about-image:hover .overlay-background3{
+  top:15%;
+right:10%;
 }
 @media screen and (max-width:567px) {
   .card{

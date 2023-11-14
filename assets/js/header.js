@@ -41,7 +41,9 @@ let headerContent=`  <nav class="navbar navbar-expand-lg navbar-light bg-light f
     </div>
   </div>
 </div>
-</nav>`;
+</nav>
+
+`;
 header.innerHTML=headerContent;
 let navbar = document.getElementsByClassName("navbar")[0];
 window.onscroll = function () { scrollFunction() };
