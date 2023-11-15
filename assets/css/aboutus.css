@@ -4,10 +4,11 @@ body{
 
 
 .card{
-        height: 200px !important;
+      
         overflow: hidden;
         cursor: pointer;
 }
+
 .card .row div:nth-child(1) {
   overflow: hidden;
   border-radius: 0%;
@@ -15,6 +16,7 @@ body{
 }
 .card img{
   height: 200px;
+  width: 370px;
   object-fit: cover;
  
  filter: brightness(0.5);
@@ -58,6 +60,21 @@ filter: brightness(1);
   top:15%;
 right:10%;
 }
+@media screen and (min-width:768px) {
+
+  .card {
+    height: 180px;
+    text-align: justify;
+  }
+  .card img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .card .row{
+    height: 100%;
+  }
+}
+
 @media screen and (max-width:567px) {
   .card{
     height: 400px !important;
@@ -66,5 +83,23 @@ right:10%;
   .card img{
     width: 100%;
     object-fit: cover;
+  }
+  .card > div{
+
+  }
+}
+@media screen and (max-width:768px) and (min-width:567px) {
+  .card{
+    height:350px;
+  }
+  .card img{
+    width: 100%;
+   
+  }
+}
+@media screen and (min-width:768px) and (max-width:1000px) {
+
+  .card {
+    height:250px;
   }
 }
