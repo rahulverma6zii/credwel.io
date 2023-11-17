@@ -81,7 +81,7 @@ hr.section-divider {
 }
 
 .main-background {
-  background-image: url('/images/1.\ Homepage.jpg');
+  background-image: url('images/Homepage.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;

@@ -24,7 +24,7 @@ addressContent.forEach((x)=>{
       <address class="fs-6">
        ${x.location}
       </address>
-      <a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href=" ${x.link}">
+      <a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="${x.link}" target="new">
         Map and route 
         <i class="bi bi-arrow-right"></i>
     </a>
@@ -32,7 +32,7 @@ addressContent.forEach((x)=>{
     </div>
     <div class="col-9 col-lg-3 ms-auto text-start">
       <div>
-        <h6> <i class="fa fa-phone" ><a class="link-dark" href="tel:${x.phone}">${x.phone}</a></i></h6>
+        <h6> <i class="fa fa-phone" ><a class="link-dark" href="tel:${x.phone}" target="new">${x.phone}</a></i></h6>
         <p>${x.email}</p>
       </div>
 
