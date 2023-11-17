@@ -51,8 +51,8 @@ let headerContent = `
        Contact Us
        </a>
        <ul class="dropdown-menu">
-         <li><a class="dropdown-item" href="#">Join Us</a></li>
-         <li><a class="dropdown-item" href="#">Get In Touch</a></li>
+         <li><a class="dropdown-item" href="joinus.html">Join Us</a></li>
+         <li><a class="dropdown-item" href="contact.html">Get In Touch</a></li>
          
        </ul>
      </li>

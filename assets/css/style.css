@@ -19,6 +19,12 @@ body {
   --primary-color:black;
   
 }
+.btn-dark{
+  background-color: black !important;
+}
+.btn-dark:hover{
+  background-color: rgb(31, 30, 30) !important;
+}
 
 .primary-colour {
   color: var(--primary-color) !important;
@@ -47,7 +53,7 @@ hr.section-divider {
 .hover-outline::after {
   content: "";
   width: 0px;
-  height: 0px;
+  height: 3.5px;
   background-color: var(--primary-color);
   position: absolute;
   bottom: 0px;
@@ -71,7 +77,7 @@ hr.section-divider {
 }
 
 .main-background {
-  background: url(/images/Homepage.jpg);
+  background: url("images/Homepage.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover; 
