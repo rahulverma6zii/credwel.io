@@ -26,19 +26,36 @@ let headerContent = `
      <ul class=" navbar-nav justify-content-center flex-md-column flex-grow-1 ms-5 list-unstyled flex-column flex-lg-row ">
 
        <li class="p-0 mx-5 nav-item hover-outline">
-           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+           <a class="nav-link " aria-current="page" href="index.html">Home</a>
        </li>
+      
+       <li class="nav-item dropdown p-0 mx-5 hover-outline">
+       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Services
+       </a>
+       <ul class="dropdown-menu">
+         <li><a class="dropdown-item" href="#">Wealth Advisory</a></li>
+         <li><a class="dropdown-item" href="#">Equity Investment</a></li>
+         <li><a class="dropdown-item" href="#">Commodity Trading</a></li>
+         <li><a class="dropdown-item" href="#">Customized Strategies</a></li>
+       </ul>
+     </li>
        <li class="p-0 mx-5 nav-item hover-outline">
-           <a class="nav-link" href="services.html">Services</a>
-       </li>
-       <li class="p-0 mx-5 nav-item hover-outline">
-           <a class="nav-link" href="aboutus.html">About us</a>
+           <a class="nav-link" href="aboutus.html">About Us</a>
        </li>
 
        
-       <li class="p-0 mx-5 nav-item hover-outline">
-           <a class="nav-link btn-dark" href="contact.html">Contact Us</a>
-       </li>
+      
+       <li class="nav-item dropdown p-0 mx-5 hover-outline">
+       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Contact Us
+       </a>
+       <ul class="dropdown-menu">
+         <li><a class="dropdown-item" href="#">Join Us</a></li>
+         <li><a class="dropdown-item" href="#">Get In Touch</a></li>
+         
+       </ul>
+     </li>
 
 
    </ul>
@@ -52,7 +69,7 @@ let headerContent = `
 `;
 header.innerHTML = headerContent;
 let navbar = document.getElementsByClassName("navbar")[0];
-window.onscroll = function () { scrollFunction();myFunction(); };
+window.onscroll = function () { scrollFunction(); myFunction(); };
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 

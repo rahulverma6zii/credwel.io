@@ -35,25 +35,12 @@ hr.section-divider {
 
 /* progressbar */
 
-.progress {
-  height: 3px;
-  width: 0%;
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  animation: progress 1s linear;
-}
+
 .about-image{
   height: 400px;
  
 }
-@keyframes progress {
-  to {
-    background-color: rgb(20, 255, 226);
-    width: 100%;
-  }
-}
+
 .hover-outline {
   position: relative;
 }
@@ -66,6 +53,9 @@ hr.section-divider {
   bottom: 0px;
   left: 0px;
   transition-duration: 0.5s;
+}
+.hover-outline:hover{
+  font-weight: 900;
 }
 .hover-outline:hover::after {
   height: 3.5px;
@@ -81,19 +71,19 @@ hr.section-divider {
 }
 
 .main-background {
-  background-image: url('images/Homepage.jpg');
+  background: url(/images/Homepage.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
   height: 675px;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -2;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
   opacity: 1;
-  animation: fadeHeader 3s ease-in-out;
+  animation: fadeHeader 0.5s ease-in-out;
 }
 @keyframes fadeHeader {
   0% {
@@ -175,8 +165,8 @@ justify-content: space-between; */
   top: 75%;
   
   left: 0px;
-  width: 90%;
-  transition-duration: 1s;
+  width: 100%;
+  transition-duration: 0.5s;
  
 }
 .card-img-overlay:hover {

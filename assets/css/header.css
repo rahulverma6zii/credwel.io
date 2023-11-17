@@ -16,7 +16,7 @@ header {
 
 .progress-bar {
   height: 5px;
-  background:green; 
+  background:grey;      
   width: 0%;
 }
 
