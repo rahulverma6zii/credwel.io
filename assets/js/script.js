@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
 
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.style.display = "block";
     //   navbar.classList.remove("navbar-light");
     //   navbar.classList.add("navbar-dark");

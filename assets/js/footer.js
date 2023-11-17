@@ -9,12 +9,9 @@ footer.innerHTML = `
     <div class="col-12">
     <ul class="d-flex mx-auto list-unstyled justify-content-center border-bottom pb-3 mb-3 gap-2 gap-lg-3">
         <li class=""><a href="index.html" class="link-light">Home</a></li>
-        <li class=""><a href="aboutus.html" class="link-light">About Us</a></li>
         <li class=""><a href="index.html#services" class="link-light">Services</a></li>
-        <li class=""><a href="contact.html" class="link-light">FAQs</a></li>
+        <li class=""><a href="aboutus.html" class="link-light">About Us</a></li>
         <li class=""><a href="contact.html" class="link-light">Contact Us</a></li>
-
-
     </ul>
    
 </div>
@@ -41,4 +38,4 @@ footer.innerHTML = `
    
 `
 let currentYear = document.getElementsByClassName("currentYear");
-currentYear[0].innerHTML = `©${new Date().getFullYear()} CREDWEL`;
+currentYear[0].innerHTML = `©${new Date().getFullYear()} <a href="index.html" class="link-light">CREDWEL</a> `;

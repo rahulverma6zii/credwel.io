@@ -32,13 +32,7 @@ hr.section-divider {
   background-color:transparent;
   margin: 22px 0px;
 }
-nav.navbar{
- 
-  border-radius: 10px;
-  margin: auto;
-  width: 88%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+
 /* progressbar */
 
 .progress {

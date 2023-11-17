@@ -1,7 +1,11 @@
 
-let header=document.getElementsByTagName("header")[0];
+let header = document.getElementsByTagName("header")[0];
 
-let headerContent=`  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+let headerContent = `
+<div class="progress-line">
+                <span class="pgs"></span>
+            </div>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
 <div class="container">
 
   <a class="navbar-brand" href="index.html">
@@ -24,12 +28,13 @@ let headerContent=`  <nav class="navbar navbar-expand-lg navbar-light bg-light f
            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
        </li>
        <li class="p-0 mx-5 nav-item hover-outline">
+           <a class="nav-link" href="index.html#services">Services</a>
+       </li>
+       <li class="p-0 mx-5 nav-item hover-outline">
            <a class="nav-link" href="aboutus.html">About us</a>
        </li>
 
-       <li class="p-0 mx-5 nav-item hover-outline">
-           <a class="nav-link" href="index.html#services">Services</a>
-       </li>
+       
        <li class="p-0 mx-5 nav-item hover-outline">
            <a class="nav-link btn-dark" href="contact.html">Contact Us</a>
        </li>
@@ -44,17 +49,17 @@ let headerContent=`  <nav class="navbar navbar-expand-lg navbar-light bg-light f
 </nav>
 
 `;
-header.innerHTML=headerContent;
+header.innerHTML = headerContent;
 let navbar = document.getElementsByClassName("navbar")[0];
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-  
+
     navbar.classList.add("modified-nav");
     navbar.classList.add("position-fixed")
 
   } else {
-    
+
     navbar.classList.remove("modified-nav");
   }
 }
