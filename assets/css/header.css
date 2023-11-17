@@ -4,13 +4,26 @@
 header {
   position: relative;
 }
-header .progress-line {
-  background: none transparent;
-  height: 4px;
-  position: absolute;
-  top: 0;
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
   width: 100%;
-  z-index: 199;
+  height: 5px;
+  background:transparent;
+}
+
+.progress-bar {
+  height: 5px;
+  background:green; 
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
 }
 nav.navbar {
 }
@@ -41,11 +54,11 @@ header {
     width: 100%;
     background-color: white;
     padding: 10px 0px;
-    width: 95%;
+   
     margin: auto;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-radius: 5px;
+
     position: fixed;
     top: 0px;
     left: 0px;

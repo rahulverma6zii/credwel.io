@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
 
 
 
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scrollFunction();myFunction(); };
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.style.display = "block";
@@ -50,6 +50,12 @@ function scrollFunction() {
   }
 }
 
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
@@ -82,4 +88,4 @@ function updateCarousel() {
 }
 updateCarousel();
 
-console.clear();
+

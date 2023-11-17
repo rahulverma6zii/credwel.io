@@ -44,6 +44,10 @@ hr.section-divider {
   left: 0;
   animation: progress 1s linear;
 }
+.about-image{
+  height: 400px;
+ 
+}
 @keyframes progress {
   to {
     background-color: rgb(20, 255, 226);
@@ -77,7 +81,7 @@ hr.section-divider {
 }
 
 .main-background {
-  background-image: url("https://img.freepik.com/premium-photo/businessman-analyzing-company-financial-report-with-augmented-reality-graphics_34141-360.jpg?w=826");
+  background-image: url('/images/1.\ Homepage.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;

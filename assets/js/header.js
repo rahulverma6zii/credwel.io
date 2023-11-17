@@ -2,10 +2,11 @@
 let header = document.getElementsByTagName("header")[0];
 
 let headerContent = `
-<div class="progress-line">
-                <span class="pgs"></span>
-            </div>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+ 
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white position-relative">
+<div class="progress-container position-absolute top-0 ">
+<div class="progress-bar" id="myBar"></div>
+</div> 
 <div class="container">
 
   <a class="navbar-brand" href="index.html">
@@ -28,7 +29,7 @@ let headerContent = `
            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
        </li>
        <li class="p-0 mx-5 nav-item hover-outline">
-           <a class="nav-link" href="index.html#services">Services</a>
+           <a class="nav-link" href="services.html">Services</a>
        </li>
        <li class="p-0 mx-5 nav-item hover-outline">
            <a class="nav-link" href="aboutus.html">About us</a>
@@ -51,7 +52,7 @@ let headerContent = `
 `;
 header.innerHTML = headerContent;
 let navbar = document.getElementsByClassName("navbar")[0];
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scrollFunction();myFunction(); };
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 
@@ -62,4 +63,12 @@ function scrollFunction() {
 
     navbar.classList.remove("modified-nav");
   }
+}
+
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
 }
