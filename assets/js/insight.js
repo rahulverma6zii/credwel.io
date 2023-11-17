@@ -1,6 +1,6 @@
 let insight = document.querySelector(".insights");
-let insight_buttons = document.getElementsByClassName("insight-buttons");
-let insights_items = [
+// let insight_buttons = document.getElementsByClassName("insight-buttons");
+let services_items = [
     {
       image: "images/4. Services - Wealth Advisory.png",
       description: "Our team of experienced advisors will work closely with you to understand your financial goals and create a personalized wealth management plan. We'll guide you through the complexities of the financial markets and help you make informed decisions.",
@@ -43,23 +43,23 @@ let insights_items = [
     
   
   ]
-  for (let i = 0; i < insight_buttons.length; i++) {
+  // for (let i = 0; i < insight_buttons.length; i++) {
 
-    insight_buttons[i].addEventListener("click", (e) => {
-      updateInsight(insight_buttons[i].innerHTML);
+  //   insight_buttons[i].addEventListener("click", (e) => {
+  //     updateInsight(insight_buttons[i].innerHTML);
   
-    })
+  //   })
   
   
-  }
+  // }
   function updateInsight(param) {
   
     if (param == "See All" || param=="") {
       insight.innerHTML = "";
-      insights_items.forEach((x,index) => {
+      services_items.forEach((x,index) => {
         if(index<=3){
         insight.innerHTML += ` 
-        <div class="col-12 col-lg-3 col-md-6">
+        <div class="item">
           <div class="card">
             <img class="card-img img-fluid" src="${x.image}" alt="">
               <div class="card-img-overlay">
@@ -79,10 +79,10 @@ let insights_items = [
   
       insight.innerHTML = "";
   
-      insights_items.forEach((x) => {
+      services_items.forEach((x) => {
         if (x.cateogory == param) {
           insight.innerHTML += ` 
-          <div class="col-12 col-lg-3 col-md-6">
+          <div class="item">
                     <div class="card">
                     <img class="card-img img-fluid" src="${x.image}" alt="">
                     <div class="card-img-overlay">

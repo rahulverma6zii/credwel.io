@@ -68,6 +68,7 @@ function updateCarousel() {
   $('.owl-carousel').owlCarousel({
     loop: true,
     responsiveClass: true,
+    margin:5,
     responsive: {
       0: {
         items: 1,

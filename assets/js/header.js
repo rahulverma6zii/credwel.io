@@ -23,13 +23,13 @@ let headerContent = `
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-     <ul class=" navbar-nav justify-content-center flex-md-column flex-grow-1 ms-5 list-unstyled flex-column flex-lg-row ">
+     <ul class=" navbar-nav justify-content-center flex-md-column flex-grow-1 ms-0 ms-lg-5 list-unstyled flex-column flex-lg-row ">
 
-       <li class="p-0 mx-5 nav-item hover-outline">
+       <li class="p-0 mx-0 mx-lg-5 nav-item hover-outline">
            <a class="nav-link " aria-current="page" href="index.html">Home</a>
        </li>
       
-       <li class="nav-item dropdown p-0 mx-5 hover-outline">
+       <li class="p-0 mx-0 mx-lg-5 nav-item dropdown  hover-outline">
        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Services
        </a>
@@ -40,13 +40,13 @@ let headerContent = `
          <li><a class="dropdown-item" href="#">Customized Strategies</a></li>
        </ul>
      </li>
-       <li class="p-0 mx-5 nav-item hover-outline">
+       <li class="p-0 mx-0 mx-lg-5 nav-item hover-outline">
            <a class="nav-link" href="aboutus.html">About Us</a>
        </li>
 
        
       
-       <li class="nav-item dropdown p-0 mx-5 hover-outline">
+       <li class="nav-item dropdown p-0 mx-0 mx-lg-5 hover-outline">
        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
        Contact Us
        </a>
