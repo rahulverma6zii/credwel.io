@@ -223,6 +223,25 @@ footer {
   
 }
 
+
+/* services pages */
+
+.services {
+  height: 500px;
+  overflow-y: hidden;
+}
+
+@media screen and (min-width:300px) and (max-width:768px) {
+  .services {
+      height:150px;
+  }
+}
+
+
+
+
+
+
 /* desktop view */
 @media (min-width: 992px) {
   .headlines-card .card:nth-child(n) {
@@ -233,10 +252,10 @@ footer {
   }
   
   header{
-    height: 180px;
+    /* height: 180px; */
   }
   .hero-section {
-    
+    margin-top: 110px;
   }
   .ourteamrow .card{
     height:450px

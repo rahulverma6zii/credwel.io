@@ -34,10 +34,10 @@ let headerContent = `
         Services
        </a>
        <ul class="dropdown-menu">
-         <li><a class="dropdown-item" href="#">Wealth Advisory</a></li>
-         <li><a class="dropdown-item" href="#">Equity Investment</a></li>
-         <li><a class="dropdown-item" href="#">Commodity Trading</a></li>
-         <li><a class="dropdown-item" href="#">Customized Strategies</a></li>
+         <li><a class="dropdown-item" href="wealthadvisory.html">Wealth Advisory</a></li>
+         <li><a class="dropdown-item" href="equityinvestment.html">Equity Investment</a></li>
+         <li><a class="dropdown-item" href="commoditytrading.html">Commodity Trading</a></li>
+         <li><a class="dropdown-item" href="customizedstrategies.html">Customized Strategies</a></li>
        </ul>
      </li>
        <li class="p-0 mx-0 mx-lg-5 nav-item hover-outline">
