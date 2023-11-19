@@ -48,34 +48,6 @@ hr.section-divider {
  
 }
 
-.hover-outline {
-  position: relative;
-}
-.hover-outline::after {
-  content: "";
-  width: 0px;
-  height: 3.5px;
-  background-color: var(--primary-color);
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  transition-duration: 0.5s;
-}
-.hover-outline:hover{
-  font-weight: 900;
-}
-.hover-outline:hover::after {
-  height: 3.5px;
-  width: 100% !important;
-  transition-duration: 0.5;
-}
-.hover-outline button {
-  border: none;
-  background-color: white;
-  width: 100%;
-  font-size: 20px;
-  font-weight: 800;
-}
 
 .main-background {
   background: url("https://raw.githubusercontent.com/rahulverma6zii/credwel.io/demo/images/Homepage.jpg");
